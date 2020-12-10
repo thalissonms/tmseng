@@ -1,0 +1,17 @@
+/* ------------------------------------------------------ COLORS ------------------------------------------------------ 
+* CONFIG ALL DEFAULT COLOR OF DARK MODE THEME
+----------------------------------------------------------------------------------------------------------------------- */
+/* ------------------ GENERAL COLORS >>> */
+$color-primary: #0DA462;
+$color-secundary: #1A1A1A;
+
+/* ------------------ BACKGROUNDS COLORS >>>  */
+$color-primary-bk: linear-gradient( #000000, #2B2B2B); // BACKGROUND PRIMARY COLOR
+$color-secundary-bk: linear-gradient(to top, #0DA462 0%, #3cba92 100%); // BACKGROUND SECUNDARY COLOR
+
+/* ------------------ FONT COLORS >>> */
+$color-primary-text: #D5EBDD; // PRIMARY COLOR TO GENERIC TEXT 
+$color-primary-text-title:  #2FB485; // PRIMARY COLOR TO GENERIC TITLE (H1, H2, H3, H4, H5, H6)
+
+/* ------------------ OTHERS COLORS >>> */
+$color-select-circle: #1DA;

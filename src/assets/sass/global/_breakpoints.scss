@@ -1,0 +1,27 @@
+@mixin breakpoint ($point){
+    @if $point == tiny {
+        @media (min-width: 20.5em) { // 20.5em 328px
+            @content;
+        }
+    }  
+    @else if $point == smaller {
+        @media (min-width: 25.465em){ // 30em 410px
+            @content;
+        }
+    }
+    @else if $point == medium { // 50em 800px
+        @media (min-width: 50em) {
+            @content;
+        }
+    }
+    @else if $point == larger {
+        @media (min-width: 100em){ // 100em 1600px
+            @content;
+        }
+    }
+    @else if $point == special-phone {
+        @media (min-height:50.7em){
+            @content;
+        }
+    }
+}

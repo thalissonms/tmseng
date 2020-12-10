@@ -1,0 +1,52 @@
+* {padding: 0; margin: 0; box-sizing: border-box;}
+body {
+    background-color: #111;
+}
+#container-nav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #111;
+}
+#logo-nav {
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 26px;
+    @include breakpoint (tiny) {
+        width: 211px;
+        margin-top: 15px;
+        margin-left: 29px;  
+    }
+}
+#arrowBack {
+    width: 26px;
+    height: 27px;
+    position: absolute;
+    left: 22px;
+    top: 27px;
+    @include breakpoint (tiny) {
+        width: 29px;
+        height: 30px;
+        left: 25px;
+        top: 40px;
+    }
+}
+#container-nav #social-midia-nav {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    @include breakpoint (special-phone) {
+        margin-top: 45px;  
+    }
+}
+#container-nav #social-midia-nav ul li {
+    display: inline;
+    list-style: none;
+    margin-left: 12px;
+}
+#container-nav #social-midia-nav ul li img {
+    width: 26px;
+}
