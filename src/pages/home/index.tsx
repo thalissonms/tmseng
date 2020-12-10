@@ -109,7 +109,7 @@ const Home: React.FC = () => {
             <img alt="Menu" src={bars} className="bars" onClick={() => navAction()} />
             <nav id="side-nav" className="hideClass" >
                 <ul>
-                    <li>- Portfólio</li>
+                    <Link href="/portfolio"><li>- Portfólio</li></Link>
                     <Link href="/about"><li>- Sobre</li></Link>
                     <li>- Orçamento</li>
                 </ul>

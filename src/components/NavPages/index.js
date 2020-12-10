@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 import About from '../About' /*
-import Form from '-./components/Form'
-import Gallery from '-./components/Gallery' */
+import Form from './components/Form' */
+import Gallery from '../Gallery'
 
 import logo from '../../assets/img/logo.png'
 import whatsapp from '../../assets/img/whatsapp.svg'
