@@ -19,6 +19,12 @@ body {
     @include breakpoint (smaller) {
         right:3.5%; 
     }
+    @include breakpoint (medium) {
+        width: 265px;
+        transform: rotate(0deg);
+        right: 37%;
+        top:20px;
+    }
 }
 #left-side {
     width: 74.5%;
@@ -27,6 +33,9 @@ body {
     background-image: $color-primary-bk;
     @include breakpoint (tiny) {
         width: 71.5%;
+    }
+    @include breakpoint (medium) {
+        width: 80.47%;
     }
 }
 #right-side {
@@ -38,21 +47,34 @@ body {
     @include breakpoint (tiny) {
         width: 28.5%;
     }
+    @include breakpoint (medium) {
+        width: 19.53%;
+    }
 }
 .bars {
     position: absolute;
     z-index: 5;
     top: 30px;
     left: 17px;
+    @include breakpoint (medium){
+        width:46px;
+        height: 40px;
+        top: 30px;
+        left: 30px;
+    }
 }
 #left-side #index-txt {
     width:220px;
     margin-top: 101px;
     margin-left: 12px;
-    font-family: 'Courgette', cursive;
+    font-family: $primary-font;
     @include breakpoint (tiny) {
         margin-left: 24px;
         margin-top: 130px;
+    }
+    @include breakpoint (medium) {
+        width: 53.73%;
+        margin-left: 23.13%;
     }
 }
 #left-side #index-txt p {
@@ -86,6 +108,10 @@ body {
         height: 335px;
         font-size: 0.92em;
     }
+    @include breakpoint (medium) {
+        height: 445px;
+        font-size: 1.125em;
+    }
 }
 #left-side #index-txt h1 {
     color: $color-primary-text-title;
@@ -94,6 +120,10 @@ body {
     text-align: center;
     @include breakpoint (tiny) {
         font-size: 2.2em;
+    }
+    @include breakpoint (medium) {
+        font-size: 2.625em;
+        margin-bottom: 10px;
     }
 }
 #right-side #arrow-select {
@@ -147,9 +177,12 @@ body {
     @include breakpoint (tiny) {
         width: 74px;
     }
+    @include breakpoint (medium) {
+        width: 105px;
+    }
 }
 #right-side #eng-circle .eng-click label {
-    font-family: 'Courgette', cursive;
+    font-family: $primary-font;
     color: #181F23;
     font-weight: bold;
     font-size: 0.9em;
@@ -190,7 +223,7 @@ body {
     border: 0 none;
     background-color: $color-primary-text-title;
     box-shadow: 0px 3px 10px 3px rgba(0,0,0,0.6);
-    font-family: 'Courgette', cursive;
+    font-family: $primary-font;
     color: $color-primary-text;
     font-size: 2em;
     &:focus {
@@ -208,6 +241,12 @@ body {
         height: 57px;
         font-size: 2.1em;
     }
+    @include breakpoint (medium) {
+        width: 282px;
+        height: 76px;
+        font-size: 2.75em;
+        margin-top: 22px;
+    }
 }
 #carrousel {
     display: none;
@@ -218,11 +257,15 @@ body {
         left: 53px;
         display: block; 
     } 
+    @include breakpoint (medium) {
+        width: 375px;
+        left: calc(50% - 187.5px)
+    }
 }
 // ------ NAV ------ //
 #container #side-nav {
     width: 205px;
-    height: 812px;
+    height: 100%;
     position: absolute;
     left: 0px;
     z-index: 2;
@@ -232,7 +275,7 @@ body {
     margin-top: 77px;
     list-style: none;
     font-size: 2em;
-    font-family: 'Bebas Neue', cursive;
+    font-family: $secundary-font;
     border-top: 1.5px solid $color-primary-text;
 }
 #container  #side-nav ul li {
@@ -254,8 +297,8 @@ body {
     width: 100%;
     position: absolute;
     bottom: 5px;
-    font-family: 'Courgette', cursive;
-    color: #6A706A;
+    font-family: $primary-font;
+    color: $color-hide-text;
     font-size: 0.65em;
     text-align: center;
 }

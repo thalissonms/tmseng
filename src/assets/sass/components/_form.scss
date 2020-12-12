@@ -1,0 +1,112 @@
+#title-form {
+    text-align: center;
+    font-family: $primary-font;
+    font-size: 2em;
+    color: $color-primary-text-title;
+    font-weight: 400;
+}
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $color-primary-text;
+    font-family: $primary-font;
+}
+#form label {
+    margin: 15px 0px 5px 13%;
+    font-size: 1em;
+    align-self: start;
+}
+#form input {
+    width: 85%;
+    height: 45px;
+    border-radius: 23.5px;
+    border:2px solid $color-primary-text-title;
+    background-color: $color-form-bk;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: $desc-font;
+    font-size: 1em;
+    color:$color-primary-text;
+}
+#form input::placeholder {
+    font-family: $desc-font;
+    font-size: 1em;
+}
+#form textarea {
+    width: 85%;
+    height: 75px;
+    resize: none;
+    border-radius: 23.5px;
+    border:2px solid $color-primary-text-title;
+    background-color:$color-form-bk;
+    padding: 10px 15px 0px 15px;
+    font-family: $desc-font;
+    font-size: 1em;
+    color:#E6F2EE;
+    
+}
+#form span {
+    font-family: $desc-font;
+    font-size: 0.65em;
+    margin-top: 3px;
+    margin-left: 15%;
+    align-self: start;
+}
+#form button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: $color-primary-text-title;
+    border: 0 none;
+    border-radius: 25px;
+    color: $color-primary-text;
+    font-family: $primary-font;
+    font-size: 2em;
+    align-self: center;
+    -webkit-box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.6);
+}
+input:focus, textarea:focus, button:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid $color-select-circle;
+    outline: 0;
+}
+@media (min-width: 20.5em) {
+    #title-form {
+        font-size: 2.2em;
+    }
+    #form label {
+        font-size: 1.1em;
+    }
+    #form input {
+        height: 50px;
+    }
+    #form textarea{
+        height: 105px;
+    }
+    #form span { 
+        font-size: 0.8em;
+    }
+}
+@media (min-width: 25.465em) {
+    #form textarea {
+        height: 195px;
+    }
+    #form label {
+        font-size: 1.25em;
+    }
+}
+@media (min-height: 50.7em) {
+    #form textarea {
+        height: 270px;
+    }
+}
+#form button:active {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transition-duration: 150ms;
+            transition-duration: 150ms;
+  }

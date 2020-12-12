@@ -109,9 +109,21 @@ const Home: React.FC = () => {
             <img alt="Menu" src={bars} className="bars" onClick={() => navAction()} />
             <nav id="side-nav" className="hideClass" >
                 <ul>
-                    <Link href="/portfolio"><li>- Portfólio</li></Link>
-                    <Link href="/about"><li>- Sobre</li></Link>
-                    <li>- Orçamento</li>
+                    <li>
+                        <Link href="/portfolio">
+                            <a>- Portfólio</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/about">
+                            <a>- Sobre</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">
+                            <a>- Orçamento</a>
+                        </Link>
+                    </li>
                 </ul>
                 <footer>Desenvolvido por Thalisson M. Silva</footer>
             </nav>
@@ -124,7 +136,7 @@ const Home: React.FC = () => {
                     links={engSocialShow}
                 />
                 <aside id="btn-orc">
-                    <button id="btn-orcamento" >Orçamento</button>
+                <Link href="/contact"><button id="btn-orcamento" >Orçamento</button></Link>
                 </aside>
 
             </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-import About from '../About' /*
-import Form from './components/Form' */
+import About from '../About'
+import Form from '../Form'
 import Gallery from '../Gallery'
 
 import logo from '../../assets/img/logo.png'

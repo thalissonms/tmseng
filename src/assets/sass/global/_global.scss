@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 body {
-    width:100vw;
-    height:100vh;
+    min-width:100vw;
+    min-height:100vh;
     background-image:$color-secundary-bk;
 }
-h1 {
-    color:#FFF;
+a {
+    text-decoration: none;
+    color: $color-primary-text;
 }
