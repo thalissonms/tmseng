@@ -6,7 +6,11 @@
 body {
     min-width:100vw;
     min-height:100vh;
-    background-image:$color-secundary-bk;
+    //background-image:$color-secundary-bk;
+    overflow: hidden;
+    @include breakpoint (small) {
+        overflow: auto;
+    }
 }
 a {
     text-decoration: none;

@@ -32,8 +32,10 @@ export default function NavPages({ to }) {
             <Link href="/">
                 <img src={arrowBack} alt="Voltar" id="arrowBack" />
             </Link>
+            <div id="main" id="component-navpage">
+                <Page />
+            </div>
 
-            <Page />
             <footer id="social-midia-nav">
                 <ul>
                     <li><a href="https://www.google.com"><img src={whatsapp} alt="WhatsApp" /></a></li>

@@ -3,6 +3,9 @@
     display: flex;
     flex-direction: column;
     color: $color-primary-text;
+    @include breakpoint (medium) {
+        width: 75%;
+    }
 }
 
 #about-box h1 {
@@ -11,6 +14,9 @@
     font-size: 2.2em;
     color: $color-primary-text-title;
     font-weight: 400;
+    @include breakpoint (medium) {
+        font-size: 3em;
+    }
 }
 
 #about-box p {
@@ -21,6 +27,19 @@
     text-align: justify;
     font-size: 0.875em;
     font-family: $desc-font;
+    @include breakpoint (tiny) {
+        height: 400px;
+    }
+    @include breakpoint (smaller) {
+        height: 500px;
+    }
+    @include breakpoint (special-phone) {
+        height: 565px;
+    }
+    @include breakpoint (medium) {
+        height: 750px;
+        font-size: 1.3em;
+    }
 }
 
 #about-box p::-webkit-scrollbar-track {
@@ -43,16 +62,16 @@
 }
 @media (min-width: 20.5em) {
     #about-box p {
-        height: 400px;
+        
     }
 }
 @media (min-width: 25.465em) {
     #about-box p {
-        height: 500px;
+        
     }
 }
 @media (min-height: 50.7em) {
     #about-box p {
-        height: 565px;
+        
     }
 }

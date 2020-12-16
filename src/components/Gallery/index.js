@@ -10,6 +10,14 @@ import muckross from '../../images/muckross-1228363.jpg'
 
 
 export default function Gallery() {
+    let rows = [];
+    for (let i = 0; i < 55; i++) {
+        rows.push(
+            <div className="img" >
+                <img src={noImg} alt="alt" />
+            </div>
+        )
+    }
     const showDetail = (img, desc, alt) => {
         let container = document.getElementById("render")
         container.style.display = "flex"
@@ -39,49 +47,7 @@ export default function Gallery() {
                     backgroundSize: "cover"
                 }}
                 />
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div><div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div><div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
-                <div className="img" >
-                    <img src={noImg} alt="alt" />
-                </div>
+                {rows}
             </div>
         </>
     )
